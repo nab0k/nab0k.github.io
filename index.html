@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f3">
+  <meta name="description" content="Serhii Nabok. International partnerships, market development and strategic advisory across Ukraine and Europe, with a focus on defence and emerging technologies.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Serhii Nabok | International Partnerships & Market Development">
+  <meta property="og:description" content="Connecting organizations, expertise and opportunities across Ukraine and international markets.">
+  <meta property="og:url" content="https://nabok.me/">
+  <link rel="canonical" href="https://nabok.me/">
+  <title>Serhii Nabok | International Partnerships & Market Development</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172d32;
+      --muted: #53646a;
+      --paper: #f7f7f3;
+      --line: #d8dfda;
+      --accent: #ac8752;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .page {
+      max-width: 1280px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 40px clamp(26px, 7vw, 100px) 32px;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 25px;
+    }
+    .monogram { font-size: 21px; font-weight: 750; letter-spacing: -.08em; }
+    .header-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 0 112px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: #596965;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin: 0 0 31px;
+    }
+    .eyebrow:before {
+      content: "";
+      display: inline-block;
+      background: var(--accent);
+      width: 29px;
+      height: 2px;
+    }
+    h1 {
+      max-width: 1000px;
+      margin: 0;
+      font-size: clamp(50px, 8.3vw, 118px);
+      font-weight: 550;
+      line-height: 1.01;
+      letter-spacing: -.071em;
+    }
+    .intro {
+      max-width: 740px;
+      margin: 35px 0 0;
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.72;
+      color: var(--muted);
+    }
+    .topics {
+      max-width: 850px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 37px;
+    }
+    .topic {
+      border: 1px solid #ccd7d0;
+      border-radius: 100px;
+      padding: 10px 15px;
+      font-size: 12px;
+      line-height: 1.2;
+      color: #445955;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 26px;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 23px;
+      background: var(--ink);
+      color: white;
+      padding: 17px 23px;
+      border: 1px solid var(--ink);
+      font-size: 13px;
+      font-weight: 600;
+      transition: background .2s, color .2s;
+    }
+    .cta:hover { background: transparent; color: var(--ink); }
+    .cta svg { width: 15px; height: 15px; }
+    .note { color: var(--muted); font-size: 13px; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 620px) {
+      .page { padding: 26px 22px 24px; }
+      header { padding-bottom: 18px; }
+      .header-label { font-size: 10px; text-align: right; }
+      main { padding: 89px 0 95px; }
+      h1 { font-size: clamp(45px, 11vw, 68px); }
+      .intro { margin-top: 25px; font-size: 17px; }
+      .topics { gap: 8px; }
+      .topic { font-size: 11px; padding: 9px 12px; }
+      footer { flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="monogram" href="/" aria-label="Serhii Nabok homepage">SN.</a>
+      <span class="header-label">Lisbon · Ukraine · Europe</span>
+    </header>
+    <main>
+      <p class="eyebrow">Serhii Nabok</p>
+      <h1>Connecting markets.<br>Advancing cooperation.</h1>
+      <p class="intro">My work brings together international partnerships, business development, institutional relations and market intelligence, with a particular focus on Ukraine’s defence and emerging technology ecosystem.</p>
+      <div class="topics" aria-label="Areas of expertise">
+        <span class="topic">Strategic partnerships</span>
+        <span class="topic">Ukraine market development</span>
+        <span class="topic">Defence &amp; dual-use technologies</span>
+        <span class="topic">Stakeholder relations</span>
+        <span class="topic">Market intelligence</span>
+      </div>
+      <div class="actions">
+        <a class="cta" href="https://www.linkedin.com/in/serhii-nabok-39046435/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <span class="note">A fuller professional profile is coming soon.</span>
+      </div>
+    </main>
+    <footer>
+      <span>© 2026 Serhii Nabok</span>
+      <span>Partnerships · Markets · Strategy</span>
+    </footer>
+  </div>
+</body>
+</html>
