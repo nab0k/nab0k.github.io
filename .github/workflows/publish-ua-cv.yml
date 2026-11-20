@@ -32,7 +32,12 @@ jobs:
           Path('/tmp/generate_cv_ua.py').write_bytes(gzip.decompress(base64.b64decode(data)))
           PY
           python /tmp/generate_cv_ua.py
-          pdfinfo cv-ua.pdf | grep 'Pages:'
+          python - <<'PY'
+          from pathlib import Path
+          data=Path('cv-ua.pdf').read_bytes()
+          assert data.startswith(b'%PDF-') and len(data)>30000
+          print('Generated PDF:',len(data),'bytes')
+          PY
       - name: Publish updated PDF
         run: |
           git add cv-ua.pdf
